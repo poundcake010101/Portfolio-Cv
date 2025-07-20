@@ -201,11 +201,20 @@
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/poundcake010101/Clinical-Decision-Support-System.git'">
                             GitHub
                         </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        <button class="btn btn-color-2 project-btn" onclick="openVideoModal()">
                             Live Demo
                         </button>
                         
                     </div>
+                </div>
+                <div id="videoModal" class="video-modal">
+                <div class="video-modal-content">
+                    <span class="close-btn" onclick="closeVideoModal()">&times;</span>
+                    <video controls autoplay>
+                    <source src="./assets/Welcome-to-CDSS-Brave-2025-07-20-22-27-23.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
@@ -257,5 +266,26 @@
             <p>Copyright &#169; 2025 Siyabonga Mnguni. All Rights Reserved.</p>
         </footer>
         <script src="script.js"></script>
+        <script>
+            function openVideoModal() {
+                document.getElementById("videoModal").style.display = "block";
+            }
+
+            function closeVideoModal() {
+                const modal = document.getElementById("videoModal");
+                const video = modal.querySelector("video");
+                video.pause();
+                video.currentTime = 0;
+                modal.style.display = "none";
+            }
+
+            // Close modal if user clicks outside content
+            window.onclick = function(event) {
+                const modal = document.getElementById("videoModal");
+                if (event.target === modal) {
+                closeVideoModal();
+                }
+            }
+        </script>
     </body>
 </html>
