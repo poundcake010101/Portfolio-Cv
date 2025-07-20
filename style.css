@@ -435,6 +435,14 @@ article .icon{
   color: black;
   border-color: rgb(163, 163, 163);
 }
+.project-description {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333; 
+  text-align: left;
+}
+
 
 /*Contacts*/
 
