@@ -195,45 +195,62 @@
             <h1 class="title">Projects</h1>
             <div class="skills-details-container">
                 <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/Clinical-Decision-Support-Systems.jpg" alt="Project 1" class="project-img"/>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/Clinical-Decision-Support-Systems.jpg" alt="Project 1" class="project-img"/>
+                        </div>
+                        <h2 class="skills-sub-title project-title">Clinical Decision Support System</h2>
+                        <p class="project-description">
+                            A C#-based web app designed to assist healthcare providers in making informed decisions. It integrates real-time and historical data, supports "what-if" analyses, and enhances clinical workflows. MySQL is used for data storing valuable insights and support without 
+                            replacing human judgment. The DBMS used for this project is MySQL.
+                        </p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/poundcake010101/Clinical-Decision-Support-System.git', '_blank')">
+                                GitHub
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="openVideoModal()">
+                                Live Demo
+                            </button>
+                            
+                        </div>
                     </div>
-                    <h2 class="skills-sub-title project-title">Clinical Decision Support System</h2>
-                    <p class="project-description">
-                        A C#-based web app designed to assist healthcare providers in making informed decisions. It integrates real-time and historical data, supports "what-if" analyses, and enhances clinical workflows. MySQL is used for data storing valuable insights and support without 
-                        replacing human judgment. The DBMS used for this project is MySQL.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/poundcake010101/Clinical-Decision-Support-System.git', '_blank')">
-                            GitHub
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="openVideoModal()">
-                            Live Demo
-                        </button>
-                        
+                    <div id="videoModal" class="video-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000;">
+                        <div class="video-modal-content" style="position:relative; margin:5% auto; padding:0; width:80%; max-width:800px;">
+                            <span class="close-btn" onclick="closeVideoModal()" style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
+                            <iframe id="videoFrame" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
-                </div>
-                <div id="videoModal" class="video-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); z-index:1000;">
-                    <div class="video-modal-content" style="position:relative; margin:5% auto; padding:0; width:80%; max-width:800px;">
-                        <span class="close-btn" onclick="closeVideoModal()" style="position:absolute; top:10px; right:20px; font-size:30px; color:white; cursor:pointer;">&times;</span>
-                        <iframe id="videoFrame" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/packet-tracer.jpg" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="skills-sub-title project-title">Packet Tracer Network Design</h2>
+                        <p class="project-description">
+                            Built using Cisco Packet Tracer, this project simulates a secure office network with multiple departments, wired/wireless access, internet connectivity, and ACL-based access control. Emphasizes realistic, scalable infrastructure within budget.
+                        </p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/poundcake010101/Packet_Tracer.git', '_blank')">
+                                GitHub
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/packet-tracer.jpg" alt="Project 2" class="project-img"/>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/ATM.png" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="skills-sub-title project-title">Student Atm Simulation</h2>
+                        <p class="project-description">
+                            Developed a C++ console-based ATM simulation tailored for student use. The program featured core banking functionalities such as account creation, login authentication, balance inquiry, deposit, withdrawal, and transaction history. Emphasized object-oriented principles and user-friendly interface design while practicing secure data handling and validation.
+                        </p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/poundcake010101/atmSimulationProject.git', '_blank')">
+                                GitHub
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="openLocalVideoModal('./assets/ATM-DEMO-VID.mp4')">
+                                Live Demo
+                            </button>
+                        </div>
                     </div>
-                    <h2 class="skills-sub-title project-title">Packet Tracer Network Design</h2>
-                    <p class="project-description">
-                        Built using Cisco Packet Tracer, this project simulates a secure office network with multiple departments, wired/wireless access, internet connectivity, and ACL-based access control. Emphasizes realistic, scalable infrastructure within budget.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/poundcake010101/Packet_Tracer.git', '_blank')">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
                 </div>
             </div>
             <img src="./assets/arrow.jpg" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />

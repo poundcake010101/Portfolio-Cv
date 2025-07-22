@@ -14,7 +14,7 @@ function openVideoModal() {
             function closeVideoModal() {
                 const modal = document.getElementById("videoModal");
                 const frame = document.getElementById("videoFrame");
-                frame.src = ""; // stop video
+                frame.src = ""; 
                 modal.style.display = "none";
             }
 
@@ -24,3 +24,14 @@ function openVideoModal() {
                 closeVideoModal();
                 }
             };
+function openLocalVideoModal(videoSrc) {
+    const modal = document.getElementById("videoModal");
+    const frame = document.getElementById("videoFrame");
+
+    frame.outerHTML = `<video id="videoFrame" width="100%" height="480" controls autoplay>
+                          <source src="${videoSrc}" type="video/mp4">
+                          Your browser does not support the video tag.
+                       </video>`;
+
+    modal.style.display = "block";
+}
