@@ -1,56 +1,103 @@
 # Siyabonga Mnguni's Virtual Portfolio
 
-Welcome to my personal developer portfolio ,I'm a passionate and driven BSc Information Technology student with hands-on experience in full-stack development, especially with C#, ASP.NET, SQL, and web technologies like HTML, CSS, and JavaScript. This portfolio showcases the projects I've built, skills I've mastered, and the journey I’m on to becoming a great software developer.
+Welcome to my personal developer portfolio. I'm a passionate BSc Information Technology graduate from North-West University with hands-on experience in full-stack development, networking, and system design. This portfolio showcases the projects I've built, skills I've mastered, and my journey toward becoming a great software developer.
 
+---
 
-# Skills
+## 🚀 Live Website
 
-- Languages: C#, Java, JavaScript, HTML, CSS, SQL
-- Frameworks & Tools: ASP.NET, Git & GitHub, Visual Studio, Netlify, SQL Server
-- Database: SQL Server, MySQL
-- Web: Responsive Design, Bootstrap, Form Validation, GridView & DataBinding
-- Other: Debugging, Exception Handling, OOP, MVC
+Visit my portfolio: [virtualpotfoliosmnguni.netlify.app](https://virtualpotfoliosmnguni.netlify.app)
 
-#Projects
+---
 
-# [Clinical Decision Support System](https://github.com/poundcake010101/Clinical-Decision-Support-System)
-A healthcare-focused web application that streamlines appointment booking and medication management. Built with C# and ASP.NET, this project helps healthcare providers make more informed decisions and allows patients to manage their data easily.
+## 🧰 Skills
 
-Features:
-- Patient & Doctor forms  
-- Appointment booking system  
-- GridView integration  
-- Admin editing and role-based logic  
-- Data stored in SQL Server LocalDB  
+### Languages
+- C#, Python, JavaScript (ES6+), SQL, HTML5, CSS3, C++
 
-Deployed with: Visual Studio 2022
+### Frameworks & Tools
+- ASP.NET Core, React.js, Node.js, Git & GitHub, Visual Studio, Netlify, Supabase
 
+### Databases
+- SQL Server, MySQL, Supabase
 
+### Networking & Cloud
+- Cisco Packet Tracer, Azure (Foundational), OS fundamentals
 
-#Education
+### Core Knowledge
+- Object-Oriented Programming, Data Structures & Algorithms, Operating Systems, Computer Networks, Information Security, System Analysis & Design
 
- Bachelor of Science in Information Technology
-North-West University  
-`2022 – Present`
+---
 
+## 📁 Projects
 
+### Clinical Decision Support System
+**Tech:** C#, ASP.NET, SQL Server  
+A healthcare-focused web app that streamlines appointment booking and medication management. Features secure authentication, form validation, and real‑time data support for informed clinical decisions.  
+🔗 [GitHub](https://github.com/poundcake010101/Clinical-Decision-Support-System)
 
-#Contact
+### NWU Marketplace Web Application
+**Tech:** ASP.NET, SQL, team collaboration  
+A team‑based marketplace platform built and tested in 2025. Involved core functionality implementation, debugging, frontend/backend integration, and system reliability testing.
 
-- Email: siphosihlesiya@gmail.com  
-- GitHub: [@poundcake010101](https://github.com/poundcake010101)  
-- LinkedIn: www.linkedin.com/in/siyabonga-mnguni-717013298
-- Portfolio Website: https://virtualpotfoliosmnguni.netlify.app 
+### Student ATM Simulation
+**Tech:** C++  
+Console‑based ATM simulation with account creation, login, balance inquiry, deposits, withdrawals, and transaction history. Demonstrates OOP principles and structured programming.  
+🔗 [GitHub](https://github.com/poundcake010101/atmSimulationProject)
 
+### E‑commerce Website – Petrocelle Fragrances
+**Tech:** HTML, CSS, JavaScript, Supabase  
+A fully functional online store with product listings, cart logic, form handling, and responsive UI. Integrated Supabase for backend data storage.  
+🔗 [GitHub](https://github.com/poundcake010101)
 
+### Cisco Packet Tracer Network Design
+**Tech:** Cisco Packet Tracer  
+Simulated secure office network with multiple departments, VLANs, ACLs, wired/wireless access, and internet connectivity. Focus on realistic, scalable infrastructure.  
+🔗 [GitHub](https://github.com/poundcake010101/Packet_Tracer)
 
-#Goals
+---
 
-- Become a full-stack developer  
+## 🎓 Education
+
+**Bachelor of Science in Information Technology**  
+North-West University | Jan 2022 – Nov 2025
+
+**National Senior Certificate (NSC)**  
+Lingjithudu Secondary School | 2020
+
+---
+
+## 🏆 Certifications & Achievements
+
+- **Introduction to Cybersecurity** – Cisco Networking Academy  
+- **FNB App Academy 2025** – Full Stack Development  
+- **Geekulcha Internal Hackathon** – 1st Place (2024), 2nd Place (2025)  
+- **Captain** – NWU Boys Volleyball Team (Leadership & team coordination)
+
+---
+
+## 📫 Contact
+
+- **Email:** [siphosihlesiya@gmail.com](mailto:siphosihlesiya@gmail.com)  
+- **GitHub:** [@poundcake010101](https://github.com/poundcake010101)  
+- **LinkedIn:** [Siyabonga Mnguni](https://linkedin.com/in/siyabonga-mnguni-717013298)  
+- **Portfolio:** [virtualpotfoliosmnguni.netlify.app](https://virtualpotfoliosmnguni.netlify.app)
+
+---
+
+## 🎯 Goals
+
+- Become a full‑stack developer  
 - Learn cloud technologies (Azure, AWS)  
-- Mentor new devs and contribute to open source  
+- Mentor new developers and contribute to open source  
 - Keep learning and improving every day  
 
+---
 
+## 📄 License
 
-Thanks for visiting my portfolio, Feel free to explore, fork, or contribute to my projects.
+Copyright © 2025 Siyabonga Mnguni. All Rights Reserved.
+
+---
+
+Thanks for visiting my portfolio! Feel free to explore, fork, or contribute to my projects.
