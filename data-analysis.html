@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analysis — Siyabonga Mnguni</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <!-- NOISE OVERLAY -->
+    <div class="noise"></div>
+
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <a href="index.html" class="logo">SM<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="web-development.html">Web Development</a></li>
+        <li><a href="data-analysis.html" class="active">Data Analysis</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <a href="index.html" class="logo">SM<span class="logo-dot">.</span></a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="data-analysis.html" class="active">Data Analysis</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section id="page-header" class="page-header">
+      <a href="index.html" class="breadcrumb"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      <div class="hero-bg-text">DATA</div>
+      <div class="section-label">Portfolio / 02</div>
+      <h1 class="section-title">Data<br /><em>Analysis</em></h1>
+      <p class="page-header-sub">SQL queries, Python scripts, and dashboard work — this section grows as new data projects are completed.</p>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="skills">
+      <div class="section-label">Toolkit</div>
+      <h2 class="section-title">Data<br /><em>Tools</em></h2>
+      <div class="skills-grid">
+        <div class="skills-col">
+          <h3 class="skills-category">Analysis &amp; Querying</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div><span class="skill-level">Experienced</span></div>
+            <div class="skill-item"><span class="skill-name">Python (Pandas)</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div><span class="skill-level">Intermediate</span></div>
+            <div class="skill-item"><span class="skill-name">Excel</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div><span class="skill-level">Experienced</span></div>
+          </div>
+        </div>
+        <div class="skills-col">
+          <h3 class="skills-category">Visualization</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Power BI</span><div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div><span class="skill-level">Basic</span></div>
+            <div class="skill-item"><span class="skill-name">Tableau</span><div class="skill-bar"><div class="skill-fill" style="--w:35%"></div></div><span class="skill-level">Basic</span></div>
+            <div class="skill-item"><span class="skill-name">Chart.js</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div><span class="skill-level">Intermediate</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Data<br /><em>Projects</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img-wrap project-img-placeholder">
+            <i class="fas fa-chart-pie placeholder-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">JavaScript · Chart.js · SheetJS</span>
+            <h3>Fragrance Sales Analytics Dashboard</h3>
+            <p>An admin dashboard built for the Patriocele Fragrance Collection, tracking sales trends, order status, and top products, with a 7-day forecast using linear regression and one-click Excel export.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card-placeholder">
+          <div class="project-img-wrap project-img-placeholder">
+            <i class="fas fa-database placeholder-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">SQL · Coming Soon</span>
+            <h3>SQL Reporting Project</h3>
+            <p>A structured query project covering aggregation, joins, and grouped reporting. Details to be added as the project is finalized.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card-placeholder">
+          <div class="project-img-wrap project-img-placeholder">
+            <i class="fas fa-table placeholder-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Excel · Coming Soon</span>
+            <h3>Excel Analysis Project</h3>
+            <p>A spreadsheet-based analysis exploring pivot tables, formulas, and data cleanup. Placeholder — more detail coming soon.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card-placeholder">
+          <div class="project-img-wrap project-img-placeholder">
+            <i class="fas fa-project-diagram placeholder-icon"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Power BI · Coming Soon</span>
+            <h3>Power BI Dashboard</h3>
+            <p>An interactive dashboard project for visualizing key metrics. This slot is reserved for an upcoming Power BI build.</p>
+          </div>
+        </div>
+
+        <a href="index.html#contact" class="project-card project-card-add">
+          <div class="project-card-add-inner">
+            <i class="fas fa-plus"></i>
+            <span>More projects coming soon</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">SM<span class="logo-dot">.</span></div>
+        <nav class="footer-nav">
+          <a href="index.html#about">About</a>
+          <a href="web-development.html">Web Development</a>
+          <a href="data-analysis.html">Data Analysis</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2025 Siyabonga Mnguni. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const revealEls = document.querySelectorAll('section, .project-card, .about-card, .skill-item, .nav-card');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+      }, { threshold: 0.1 });
+      revealEls.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+
+      const barObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            const fill = e.target.querySelector('.skill-fill');
+            if (fill) fill.style.width = fill.style.getPropertyValue('--w') || fill.style['--w'] || getComputedStyle(fill).getPropertyValue('--w');
+          }
+        });
+      }, { threshold: 0.3 });
+      document.querySelectorAll('.skill-item').forEach(el => barObserver.observe(el));
+    </script>
+  </body>
+</html>

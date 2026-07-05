@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development — Siyabonga Mnguni</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <!-- NOISE OVERLAY -->
+    <div class="noise"></div>
+
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <a href="index.html" class="logo">SM<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="web-development.html" class="active">Web Development</a></li>
+        <li><a href="data-analysis.html">Data Analysis</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <a href="index.html" class="logo">SM<span class="logo-dot">.</span></a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="web-development.html" class="active">Web Development</a></li>
+          <li><a href="data-analysis.html">Data Analysis</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section id="page-header" class="page-header">
+      <a href="index.html" class="breadcrumb"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      <div class="hero-bg-text">CODE</div>
+      <div class="section-label">Portfolio / 01</div>
+      <h1 class="section-title">Web<br /><em>Development</em></h1>
+      <p class="page-header-sub">Full-stack builds, systems, and interactive front-end work — from healthcare software to e-commerce platforms.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-label">Toolkit</div>
+      <h2 class="section-title">My Technical<br /><em>Toolkit</em></h2>
+      <div class="skills-grid">
+        <div class="skills-col">
+          <h3 class="skills-category">Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">C#</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div><span class="skill-level">Experienced</span></div>
+            <div class="skill-item"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div><span class="skill-level">Intermediate</span></div>
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
+            <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div><span class="skill-level">Basic</span></div>
+            <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
+          </div>
+        </div>
+        <div class="skills-col">
+          <h3 class="skills-category">Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div><span class="skill-level">Experienced</span></div>
+            <div class="skill-item"><span class="skill-name">ASP.NET</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
+            <div class="skill-item"><span class="skill-name">Packet Tracer</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div><span class="skill-level">Experienced</span></div>
+            <div class="skill-item"><span class="skill-name">C# Backend</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div><span class="skill-level">Experienced</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Recent<br /><em>Work</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="./assets/Clinical-Decision-Support-Systems.jpg" alt="Clinical Decision Support System" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <button onclick="window.open('https://github.com/poundcake010101/Clinical-Decision-Support-System.git','_blank')"><i class="fab fa-github"></i></button>
+                <button onclick="openVideoModal()"><i class="fas fa-play"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">C# · ASP.NET · MySQL</span>
+            <h3>Clinical Decision Support System</h3>
+            <p>A web app assisting healthcare providers with real-time and historical data integration, "what-if" analyses, and enhanced clinical workflows — without replacing human judgment.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="./assets/packet-tracer.jpg" alt="Packet Tracer Network Design" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <button onclick="window.open('https://github.com/poundcake010101/Packet_Tracer.git','_blank')"><i class="fab fa-github"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Cisco · Networking · ACL</span>
+            <h3>Packet Tracer Network Design</h3>
+            <p>A simulated secure office network featuring multi-department layout, wired/wireless access, internet connectivity, and ACL-based access control.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="./assets/ATM.png" alt="Student ATM Simulation" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <button onclick="window.open('https://github.com/poundcake010101/atmSimulationProject.git','_blank')"><i class="fab fa-github"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">C++ · OOP · Console</span>
+            <h3>Student ATM Simulation</h3>
+            <p>A C++ console-based ATM for students, featuring account creation, authentication, balance inquiries, deposits, withdrawals, and full transaction history.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="./assets/petrio.png" alt="Patriocele Fragrance Collection" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <button onclick="window.open('https://github.com/poundcake010101/Patriocele-Fragrance-collection.git','_blank')"><i class="fab fa-github"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">HTML · CSS · JavaScript</span>
+            <h3>Patriocele Fragrance Collection</h3>
+            <p>A luxury e-commerce platform that allows customers to browse, filter, and purchase premium fragrances. Includes a full customer-facing storefront, shopping cart, order management, a user profile system, and a feature-rich admin dashboard with real-time analytics and Excel reporting.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="./assets/nwu_market.png" alt="NWU Student Market" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <button onclick="window.open('https://github.com/MrNiffler/nwu-student-market.git','_blank')"><i class="fab fa-github"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Node.js · Express API · HTML</span>
+            <h3>NWU Student Market</h3>
+            <p>A secure, web-based marketplace specific to the North-West University community, where students may buy, sell, and trade commodities like used textbooks, or offer services such as tutoring, baking, or design work.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="video-modal">
+      <div class="video-modal-content">
+        <span class="close-btn" onclick="closeVideoModal()">&times;</span>
+        <iframe id="videoFrame" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">SM<span class="logo-dot">.</span></div>
+        <nav class="footer-nav">
+          <a href="index.html#about">About</a>
+          <a href="web-development.html">Web Development</a>
+          <a href="data-analysis.html">Data Analysis</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2025 Siyabonga Mnguni. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const revealEls = document.querySelectorAll('section, .project-card, .about-card, .skill-item, .nav-card');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+      }, { threshold: 0.1 });
+      revealEls.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+
+      const barObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            const fill = e.target.querySelector('.skill-fill');
+            if (fill) fill.style.width = fill.style.getPropertyValue('--w') || fill.style['--w'] || getComputedStyle(fill).getPropertyValue('--w');
+          }
+        });
+      }, { threshold: 0.3 });
+      document.querySelectorAll('.skill-item').forEach(el => barObserver.observe(el));
+    </script>
+  </body>
+</html>

@@ -21,7 +21,7 @@ function closeVideoModal() {
 
 window.onclick = function(event) {
   const modal = document.getElementById("videoModal");
-  if (event.target === modal) closeVideoModal();
+  if (modal && event.target === modal) closeVideoModal();
 };
 
 function openLocalVideoModal(videoSrc) {

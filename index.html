@@ -20,26 +20,26 @@
 
     <!-- DESKTOP NAV -->
     <nav id="desktop-nav">
-      <div class="logo">SM<span class="logo-dot">.</span></div>
+      <a href="index.html" class="logo">SM<span class="logo-dot">.</span></a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="web-development.html">Web Development</a></li>
+        <li><a href="data-analysis.html">Data Analysis</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <!-- HAMBURGER NAV -->
     <nav id="hamburger-nav">
-      <div class="logo">SM<span class="logo-dot">.</span></div>
+      <a href="index.html" class="logo">SM<span class="logo-dot">.</span></a>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span><span></span><span></span>
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="data-analysis.html">Data Analysis</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -119,138 +119,34 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="section-label">02 / Skills</div>
-      <h2 class="section-title">My Technical<br /><em>Toolkit</em></h2>
-      <div class="skills-grid">
-        <div class="skills-col">
-          <h3 class="skills-category">Frontend</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">C#</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div><span class="skill-level">Experienced</span></div>
-            <div class="skill-item"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div><span class="skill-level">Intermediate</span></div>
-            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
-            <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div><span class="skill-level">Basic</span></div>
-            <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
-          </div>
-        </div>
-        <div class="skills-col">
-          <h3 class="skills-category">Backend</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div><span class="skill-level">Experienced</span></div>
-            <div class="skill-item"><span class="skill-name">ASP.NET</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
-            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div><span class="skill-level">Experienced</span></div>
-            <div class="skill-item"><span class="skill-name">Packet Tracer</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div><span class="skill-level">Experienced</span></div>
-            <div class="skill-item"><span class="skill-name">C# Backend</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div><span class="skill-level">Experienced</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- EXPLORE / NAVIGATION CARDS -->
+    <section id="explore">
+      <div class="section-label">02 / Explore</div>
+      <h2 class="section-title">Choose A<br /><em>Path</em></h2>
+      <div class="nav-cards-grid">
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="section-label">03 / Projects</div>
-      <h2 class="section-title">Recent<br /><em>Work</em></h2>
-      <div class="projects-grid">
+        <a href="web-development.html" class="nav-card">
+          <div class="nav-card-index">01</div>
+          <div class="nav-card-icon"><i class="fas fa-code"></i></div>
+          <h3 class="nav-card-title">Web Development</h3>
+          <p class="nav-card-desc">Full-stack builds, C#/ASP.NET systems, and interactive front-end work — browse the projects.</p>
+          <span class="nav-card-cta">View Projects <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img src="./assets/Clinical-Decision-Support-Systems.jpg" alt="Clinical Decision Support System" />
-            <div class="project-overlay">
-              <div class="project-links">
-                <button onclick="window.open('https://github.com/poundcake010101/Clinical-Decision-Support-System.git','_blank')"><i class="fab fa-github"></i></button>
-                <button onclick="openVideoModal()"><i class="fas fa-play"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">C# · ASP.NET · MySQL</span>
-            <h3>Clinical Decision Support System</h3>
-            <p>A web app assisting healthcare providers with real-time and historical data integration, "what-if" analyses, and enhanced clinical workflows — without replacing human judgment.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img src="./assets/packet-tracer.jpg" alt="Packet Tracer Network Design" />
-            <div class="project-overlay">
-              <div class="project-links">
-                <button onclick="window.open('https://github.com/poundcake010101/Packet_Tracer.git','_blank')"><i class="fab fa-github"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Cisco · Networking · ACL</span>
-            <h3>Packet Tracer Network Design</h3>
-            <p>A simulated secure office network featuring multi-department layout, wired/wireless access, internet connectivity, and ACL-based access control.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img src="./assets/ATM.png" alt="Student ATM Simulation" />
-            <div class="project-overlay">
-              <div class="project-links">
-                <button onclick="window.open('https://github.com/poundcake010101/atmSimulationProject.git','_blank')"><i class="fab fa-github"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">C++ · OOP · Console</span>
-            <h3>Student ATM Simulation</h3>
-            <p>A C++ console-based ATM for students, featuring account creation, authentication, balance inquiries, deposits, withdrawals, and full transaction history.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img src="./assets/petrio.png" alt="Patriocele Fragrance Collection" />
-            <div class="project-overlay">
-              <div class="project-links">
-                <button onclick="window.open('https://github.com/poundcake010101/Patriocele-Fragrance-collection.git','_blank')"><i class="fab fa-github"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">HTML · CSS · JavaScript</span>
-            <h3>Patriocele Fragrance Collection</h3>
-            <p>Patriocele Fragrance Collection is a luxury e-commerce platform that allows customers to browse, filter, and purchase premium fragrances. It includes a full customer-facing storefront, a shopping cart, order management, a user profile system, and a feature-rich admin dashboard with real-time analytics and Excel reporting.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img-wrap">
-            <img src="./assets/nwu_market.png" alt="NWU Student Market" />
-            <div class="project-overlay">
-              <div class="project-links">
-                <button onclick="window.open('https://github.com/MrNiffler/nwu-student-market.git','_blank')"><i class="fab fa-github"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Node.js · Express API · Html</span>
-            <h3>NWU Student Market</h3>
-            <p>The NWU Student market is a secure and web-based application that is specific to the
-                North-West University community. It has a reliable marketplace where students may
-                purchase, sell and trade commodities, including used textbooks, and provide or seek
-                services like tutoring, baking or design work.</p>
-          </div>
-        </div>
+        <a href="data-analysis.html" class="nav-card">
+          <div class="nav-card-index">02</div>
+          <div class="nav-card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3 class="nav-card-title">Data Analysis</h3>
+          <p class="nav-card-desc">SQL, Python, and dashboard work — data-driven projects and analysis in progress.</p>
+          <span class="nav-card-cta">View Projects <i class="fas fa-arrow-right"></i></span>
+        </a>
 
       </div>
     </section>
-
-    <!-- VIDEO MODAL -->
-    <div id="videoModal" class="video-modal">
-      <div class="video-modal-content">
-        <span class="close-btn" onclick="closeVideoModal()">&times;</span>
-        <iframe id="videoFrame" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
 
     <!-- CONTACT -->
     <section id="contact">
-      <div class="section-label">04 / Contact</div>
+      <div class="section-label">03 / Contact</div>
       <h2 class="section-title">Get In<br /><em>Touch</em></h2>
       <p class="contact-sub">Open to opportunities, collaborations, or just a conversation.</p>
       <div class="contact-cards">
@@ -279,8 +175,8 @@
         <div class="footer-logo">SM<span class="logo-dot">.</span></div>
         <nav class="footer-nav">
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+          <a href="web-development.html">Web Development</a>
+          <a href="data-analysis.html">Data Analysis</a>
           <a href="#contact">Contact</a>
         </nav>
         <p class="footer-copy">© 2025 Siyabonga Mnguni. All Rights Reserved.</p>
@@ -290,7 +186,7 @@
     <script src="script.js"></script>
     <script>
       // Reveal on scroll
-      const revealEls = document.querySelectorAll('section, .project-card, .about-card, .skill-item');
+      const revealEls = document.querySelectorAll('section, .project-card, .about-card, .skill-item, .nav-card');
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
       }, { threshold: 0.1 });
